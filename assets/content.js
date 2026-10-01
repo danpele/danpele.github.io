@@ -123,7 +123,7 @@ window.SITE = {
           ro: ['IDA: Institute for Digital Assets', '2023–2026 · PNRR, contract CN760046/23.05.2023', 'Cercetător: foundation models și LLM-uri pentru prognoza riscului (LLM-VaR, LLM-ES), machine learning pentru active digitale (avertizare timpurie pentru active „zombie”, prognoza lichidității).'] },
         { href: 'https://www.ai4efin.ase.ro',
           en: ['AI4EFin: Artificial Intelligence for Energy Finance', '2023–2026 · PNRR, contract CN760048/23.05.2023', 'Researcher; led the research line on forecasting, explainable AI and statistical calibration and coordinated the PhD students in the team: energy-price forecasting, early warning for price spikes, conformal calibration.'],
-          ro: ['AI4EFin: Artificial Intelligence for Energy Finance', '2023–2026 · PNRR, contract CN760048/23.05.2023', 'Cercetător; coordonarea liniei de cercetare prognoză, AI explicabil și calibrare statistică și a doctoranzilor din echipă: prognoza prețului energiei, avertizare timpurie pentru vârfuri de preț, calibrare conformală.'] },
+          ro: ['AI4EFin: Artificial Intelligence for Energy Finance', '2023–2026 · PNRR, contract CN760048/23.05.2023', 'Cercetător; coordonarea liniei de cercetare prognoză, AI explicabil și calibrare statistică și a doctoranzilor din echipă: prognoza prețului energiei, avertizare timpurie pentru vîrfuri de preț, calibrare conformală.'] },
         { href: 'https://www.cost.eu/actions/CA19130/',
           en: ['COST Action CA19130: Fintech and AI in Finance', '2020–2024', 'Management Committee member for Romania; trainer in the Action’s summer schools.'],
           ro: ['Acțiunea COST CA19130: Fintech and AI in Finance', '2020–2024', 'Membru în Comitetul de Management din partea României; formator în școlile de vară ale acțiunii.'] },
@@ -2001,9 +2001,9 @@ window.SITE = {
                     ['Cercetător Științific I (CS I)', 'Institutul de Prognoză Economică (IPE), Academia Română', 'logo_acad.png', 'https://ipe.ro']],
             about: 'Despre', interests: 'Domenii de cercetare',
             bio: [
-                'Sunt profesor universitar la Academia de Studii Economice din București (ASE) și Cercetător Științific I (CS I) la Institutul de Prognoză Economică (IPE) al Academiei Române.',
+                'Sînt profesor universitar la Academia de Studii Economice din București (ASE) și Cercetător Științific I (CS I) la Institutul de Prognoză Economică (IPE) al Academiei Române.',
                 'Lucrez în econometrie financiară, măsurarea riscului și AI în finanțe: tail risk (Value at Risk și Expected Shortfall), entropie informațională, bule speculative și crahuri bursiere, active digitale și, mai recent, modele mari de limbaj și time-series foundation models pentru prognoza riscului și piețele de energie.',
-                'Coordonez echipa ASE în rețeaua doctorală MSCA Digital Finance; între 2023 și 2026 am lucrat în proiectele IDA și AI4EFin. Sunt conducător de doctorat din 2019. Materialele de curs și codul lucrărilor mele sunt publice pe GitHub.'
+                'Coordonez echipa ASE în rețeaua doctorală MSCA Digital Finance; între 2023 și 2026 am lucrat în proiectele IDA și AI4EFin. Sînt conducător de doctorat din 2019. Materialele de curs și codul lucrărilor mele sînt publice pe GitHub.'
             ],
             interestsList: ['Econometrie financiară', 'Tail risk: VaR și ES', 'Entropie informațională', 'Active digitale', 'Bule și crahuri', 'AI și LLM-uri în finanțe', 'Foundation models', 'Energy finance'],
             stats: { pubs: 'publicații', journal: 'articole în reviste', courses: 'cursuri deschise', since: 'la ASE din' },
