@@ -1955,8 +1955,8 @@ window.SITE = {
                     ['Senior Researcher I (CS I)', 'Institute for Economic Forecasting (IPE), Romanian Academy', 'logo_acad.png', 'https://ipe.ro']],
             about: 'About', interests: 'Research interests',
             bio: [
-                'My doctoral thesis (2007) dealt with statistical methods for the stock market, and my postdoctoral research with information entropy, uncertainty and the predictability of financial crises. I have since worked on speculative bubbles, digital assets and the forecasting of tail risk with Value at Risk and Expected Shortfall.',
-                'My current research concerns large language models and time-series foundation models for risk forecasting and energy markets. My course materials and the code behind my papers are public on GitHub.'
+                'My research is on measuring and forecasting risk in financial markets: tail risk (Value at Risk and Expected Shortfall), information entropy, speculative bubbles and crashes, digital assets and energy markets.',
+                'In recent years I have worked with large language models and time-series foundation models for risk forecasting, together with my PhD students and the partners of the MSCA Doctoral Network on Digital Finance.'
             ],
             interestsList: ['Financial econometrics', 'Tail risk: VaR & ES', 'Information entropy', 'Digital assets', 'Bubbles & crashes', 'AI & LLMs in finance', 'Foundation models', 'Energy finance'],
             stats: { pubs: 'publications', journal: 'journal articles', courses: 'open courses', since: 'teaching at ASE since' },
@@ -1998,8 +1998,8 @@ window.SITE = {
                     ['Cercetător Științific I (CS I)', 'Institutul de Prognoză Economică (IPE), Academia Română', 'logo_acad.png', 'https://ipe.ro']],
             about: 'Despre', interests: 'Domenii de cercetare',
             bio: [
-                'Teza de doctorat (2007) a tratat metode statistice pentru piața de capital, iar cercetarea postdoctorală, entropia informațională, incertitudinea și predictibilitatea crizelor financiare. Am studiat apoi bulele speculative, activele digitale și prognoza riscului extrem prin Value at Risk și Expected Shortfall.',
-                'În prezent cercetez modelele mari de limbaj și time-series foundation models în prognoza riscului și pe piețele de energie. Materialele de curs și codul lucrărilor mele sînt publice pe GitHub.'
+                'Cercetarea mea se ocupă de măsurarea și prognoza riscului pe piețele financiare: riscul extrem (Value at Risk și Expected Shortfall), entropia informațională, bulele speculative și crahurile, activele digitale și piețele de energie.',
+                'În ultimii ani lucrez cu modele mari de limbaj și time-series foundation models pentru prognoza riscului, împreună cu doctoranzii mei și cu partenerii din rețeaua doctorală MSCA Digital Finance.'
             ],
             interestsList: ['Econometrie financiară', 'Tail risk: VaR și ES', 'Entropie informațională', 'Active digitale', 'Bule și crahuri', 'AI și LLM-uri în finanțe', 'Foundation models', 'Energy finance'],
             stats: { pubs: 'publicații', journal: 'articole în reviste', courses: 'cursuri deschise', since: 'la ASE din' },
