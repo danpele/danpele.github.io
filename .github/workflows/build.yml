@@ -1,0 +1,42 @@
+# Rebuild the pages (prerendered HTML, sitemap, CV PDFs) whenever the content or the templates change,
+# e.g. after editing assets/content.js or assets/pubs.js directly on github.com.
+name: Build site
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/content.js'
+      - 'assets/pubs.js'
+      - 'assets/app.js'
+      - 'assets/viz.js'
+      - 'assets/graphs.js'
+      - 'assets/style.css'
+      - 'sections.html'
+      - 'cv_print.html'
+      - 'build_pages.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: build-site
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: browser-actions/setup-chrome@v1
+        id: chrome
+      - name: Build pages
+        env:
+          CHROME: ${{ steps.chrome.outputs.chrome-path }}
+        run: python3 build_pages.py
+      - name: Commit the rebuilt pages
+        run: |
+          git config user.name "Daniel Traian Pele"
+          git config user.email "danpele@ase.ro"
+          git add -A
+          git diff --cached --quiet || (git commit -m "Rebuild pages" && git push)

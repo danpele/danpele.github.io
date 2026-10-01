@@ -1,0 +1,8 @@
+# DOIs listed on ORCID that are deliberately NOT on the site (not the owner's work, prefaces,
+# preprints of papers already listed, duplicates). One DOI per line; text after # is a comment.
+10.20944/preprints202606.0259.v1  # 2026 Finite-Sample Precision Limits for Expected Shortfall Forecast Comparisons ()
+10.2139/ssrn.6770258  # 2026 AI Listening to Central Banks: From Words to Markets and Macroeconomic Outcomes ()
+10.2139/ssrn.6876919  # 2026 Energy Financial Risk Meter: Systemic Risk in the EU Energy Sector ()
+10.2139/ssrn.4804484  # 2024 Understanding Blockchain Technology ()
+10.2139/ssrn.4595672  # 2023 Cryptocurrency Liquidity Forecasting ()
+10.1016/s2212-5671(14)00270-6  # 2014 Foreword (Procedia Economics and Finance)

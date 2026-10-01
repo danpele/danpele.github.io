@@ -1,0 +1,38 @@
+# Once a week: look for works that are on ORCID but not yet on the site and open a pull request
+# with them, so each new entry is reviewed before it is published.
+name: New publications from ORCID
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check ORCID
+        id: check
+        run: |
+          python3 tools/check_orcid.py | tee orcid.log
+          echo "summary<<EOF" >> "$GITHUB_OUTPUT"; cat orcid.log >> "$GITHUB_OUTPUT"; echo "EOF" >> "$GITHUB_OUTPUT"
+          rm orcid.log
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: new-publications
+          commit-message: "New publications from ORCID"
+          title: "New publications from ORCID"
+          body: |
+            Works found on ORCID that are not yet on the site (metadata from Crossref).
+            Check them, edit assets/pubs.js in this pull request if needed, then merge.
+            To keep a work off the site for good, add its DOI to tools/orcid_ignore.txt.
+
+            ```
+            ${{ steps.check.outputs.summary }}
+            ```
+          add-paths: assets/pubs.js
