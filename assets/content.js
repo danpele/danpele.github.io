@@ -1956,7 +1956,7 @@ window.SITE = {
             about: 'About', interests: 'Research interests',
             bio: [
                 'My research is on measuring and forecasting risk in financial markets: tail risk (Value at Risk and Expected Shortfall), information entropy, speculative bubbles and crashes, digital assets and energy markets.',
-                'In recent years I have worked with large language models and time-series foundation models for risk forecasting, together with my PhD students and the partners of the MSCA Doctoral Network on Digital Finance.'
+                'More recently, I study how large language models and time-series foundation models can be used to forecast risk, partly in joint work with my PhD students and the partners of the MSCA Doctoral Network on Digital Finance.'
             ],
             interestsList: ['Financial econometrics', 'Tail risk: VaR & ES', 'Information entropy', 'Digital assets', 'Bubbles & crashes', 'AI & LLMs in finance', 'Foundation models', 'Energy finance'],
             stats: { pubs: 'publications', journal: 'journal articles', courses: 'open courses', since: 'teaching at ASE since' },
@@ -1999,7 +1999,7 @@ window.SITE = {
             about: 'Despre', interests: 'Domenii de cercetare',
             bio: [
                 'Cercetarea mea se ocupă de măsurarea și prognoza riscului pe piețele financiare: riscul extrem (Value at Risk și Expected Shortfall), entropia informațională, bulele speculative și crahurile, activele digitale și piețele de energie.',
-                'În ultimii ani lucrez cu modele mari de limbaj și time-series foundation models pentru prognoza riscului, împreună cu doctoranzii mei și cu partenerii din rețeaua doctorală MSCA Digital Finance.'
+                'Mai recent, studiez cum pot fi folosite modelele mari de limbaj și time-series foundation models în prognoza riscului. O parte din aceste cercetări le fac împreună cu doctoranzii mei și cu partenerii din rețeaua doctorală MSCA Digital Finance.'
             ],
             interestsList: ['Econometrie financiară', 'Tail risk: VaR și ES', 'Entropie informațională', 'Active digitale', 'Bule și crahuri', 'AI și LLM-uri în finanțe', 'Foundation models', 'Energy finance'],
             stats: { pubs: 'publicații', journal: 'articole în reviste', courses: 'cursuri deschise', since: 'la ASE din' },
