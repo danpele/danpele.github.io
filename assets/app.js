@@ -34,7 +34,7 @@
 
         if (has('roles')) {
         // hero
-        $('eyebrow').textContent = T.eyebrow;
+        $('eyebrow').innerHTML = T.eyebrow.split(' · ').map(x => `<span class="seg">${esc(x)}</span>`).join(' · ');
         $('hero-viz').innerHTML = VIZ('tails', 'dark', 440, 250);
         $('roles').innerHTML = T.roles.map(([title, inst, logo, href]) =>
             `<a class="role" href="${href}" ${ext}><img src="assets/${logo}" alt=""><span><b>${esc(title)}</b>${esc(inst)}</span></a>`).join('');
@@ -45,7 +45,7 @@
             [new Date().getFullYear() - 2001, T.kpis.years]]
             .map(([n, l]) => `<div class="kpi"><b data-n="${n}">${n}</b><span>${l}</span></div>`).join('');
         $('partners').innerHTML = S.partners.map(([img, name, href]) =>
-            `<a href="${href}" ${ext} title="${esc(name)}"><img src="assets/${img}" alt="${esc(name)}" loading="lazy"></a>`).join('');
+            `<a href="${href}" ${ext} title="${esc(name)}"><img src="assets/${img}" alt="" loading="lazy"><span class="plabel">${esc(name)}</span></a>`).join('');
 
         }
         if (has('bio')) {
@@ -98,7 +98,7 @@
             const inner = `<span class="meta">${esc(meta)}</span><h4>${esc(name)}</h4><p>${esc(text)}</p>`;
             return p.href ? `<a class="project" href="${p.href}" ${ext}>${inner}</a>` : `<div class="project">${inner}</div>`;
         }).join('');
-        if (PAGE === 'cv' && S.projectsMore) $('projects').insertAdjacentHTML('afterend', `<h3 class="cv-sec more-proj">${T.moreProjects}</h3><ul class="more-projects">` +
+        if (PAGE === 'cv' && S.projectsMore && !document.querySelector('.more-projects')) $('projects').insertAdjacentHTML('afterend', `<h3 class="cv-sec more-proj">${T.moreProjects}</h3><ul class="more-projects">` +
             S.projectsMore.map(p => `<li><span class="meta">${esc(p.y)}</span> <b>${esc(p[LANG][0])}</b>. ${esc(p[LANG][1])}</li>`).join('') + '</ul>');
 
         }

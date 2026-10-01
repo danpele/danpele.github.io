@@ -26,8 +26,8 @@
         return null;
     };
 
-    const tip = document.createElement('div');
-    tip.className = 'viz-tip'; tip.hidden = true; document.body.appendChild(tip);
+    const tip = document.querySelector('.viz-tip') || document.createElement('div');
+    tip.className = 'viz-tip'; tip.hidden = true; if (!tip.parentNode) document.body.appendChild(tip);
     const showTip = (html, ev) => { tip.innerHTML = html; tip.hidden = false; moveTip(ev); };
     const moveTip = ev => { tip.style.left = Math.min(ev.clientX + 14, window.innerWidth - 300) + 'px'; tip.style.top = (ev.clientY + 14) + 'px'; };
     const hideTip = () => { tip.hidden = true; };
@@ -35,6 +35,7 @@
     // ---------------- conference map ----------------
     async function drawMap() {
         const el = document.getElementById('talk-map');
+        if (el) el.innerHTML = '';   // the page may be prerendered
         if (!el || !window.d3 || !window.topojson) return;
         const byCity = new Map();
         S.talks.forEach(c => { const g = cityOf(c); if (!g) return;
@@ -89,6 +90,7 @@
     function drawNetwork() {
         const el = document.getElementById('coauthor-net');
         if (!el || !window.d3) return;
+        el.innerHTML = '';   // the page may be prerendered
         const norm = n => n.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase();
         const keyOf = n => { const parts = norm(n).replace(/[.,]/g, ' ').split(/[\s]+/).filter(Boolean); if (!parts.length) return null;
             const last = parts[parts.length - 1].split('-')[0]; return last + '|' + parts[0][0]; };
