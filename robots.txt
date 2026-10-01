@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://danpele.github.io/sitemap.xml

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CV · Daniel Traian Pele</title>
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    /* Europass CV layout (2020+ editor): date and place on top, bold title, employer, description */
+    @page { size: A4; margin: 14mm 15mm 16mm;
+        @bottom-right { content: counter(page) ' / ' counter(pages); font-family: 'Open Sans', Arial, sans-serif; font-size: 8pt; color: #555; }
+        @bottom-left { content: 'Daniel Traian Pele · Curriculum vitae'; font-family: 'Open Sans', Arial, sans-serif; font-size: 8pt; color: #555; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Open Sans', Arial, sans-serif; font-size: 9.3pt; line-height: 1.45; color: #222; }
+    .page { max-width: 180mm; margin: 0 auto; }
+    a { color: #0B4DA2; text-decoration: none; }
+    header { display: flex; gap: 7mm; align-items: flex-start; margin-bottom: 4mm; }
+    header img { width: 30mm; height: 36mm; object-fit: cover; border-radius: 2mm; }
+    h1 { font-size: 21pt; font-weight: 700; margin: 0 0 1.5mm; color: #1B1B1B; letter-spacing: 0.2pt; }
+    .info { margin: 0; font-size: 8.9pt; line-height: 1.6; }
+    .info b { font-weight: 600; color: #0B4DA2; }
+    h2 { font-size: 11pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6pt; color: #0B4DA2;
+         display: flex; align-items: center; gap: 3mm; margin: 5.5mm 0 2.5mm; break-after: avoid; page-break-after: avoid; }
+    h2::after { content: ''; flex: 1; border-bottom: 1.2pt solid #0B4DA2; }
+    .entry { margin: 0 0 3mm; break-inside: avoid; }
+    .when { font-size: 8.3pt; color: #555; text-transform: uppercase; letter-spacing: 0.3pt; }
+    .when .place { text-transform: none; letter-spacing: 0; margin-left: 2mm; color: #0B4DA2; }
+    .what { font-weight: 700; font-size: 9.8pt; margin: 0.3mm 0; }
+    .where { font-weight: 600; color: #333; }
+    .desc { margin: 0.5mm 0 0; }
+    .about { margin: 0 0 1.5mm; text-align: justify; }
+    ul.plain { margin: 0; padding-left: 4.5mm; }
+    ul.plain li { margin: 0 0 1.3mm; break-inside: avoid; }
+    .kv { display: grid; grid-template-columns: 38mm 1fr; gap: 1mm 3mm; margin: 0 0 1mm; }
+    .kv dt { font-weight: 600; color: #333; }
+    .kv dd { margin: 0; }
+    ol.pubs { margin: 0; padding-left: 7mm; font-size: 8.5pt; line-height: 1.38; }
+    ol.pubs li { margin: 0 0 1.3mm; break-inside: avoid; }
+    ol.pubs .me { font-weight: 700; }
+    table.cefr { border-collapse: collapse; margin: 1mm 0 1mm; font-size: 8.6pt; }
+    table.cefr th { font-weight: 600; color: #0B4DA2; padding: 0.8mm 3mm; text-align: center; border-bottom: 0.6pt solid #C9D3E3; }
+    table.cefr td { padding: 0.8mm 3mm; text-align: center; }
+    table.cefr td.ln { text-align: left; font-weight: 600; padding-left: 0; }
+    .cnote { font-size: 8pt; color: #555; text-align: left !important; }
+    .keep { break-inside: avoid; page-break-inside: avoid; }
+    .note { font-size: 8.4pt; color: #555; margin-top: 3mm; }
+    @media screen { body { background: #EEF1F6; } .page { background: #fff; padding: 14mm 15mm; margin: 10mm auto; box-shadow: 0 4px 24px rgba(0,0,0,0.12); } }
+</style>
+</head>
+<body>
+<div class="page" id="cv"></div>
+<script src="assets/pubs.js"></script>
+<script src="assets/content.js"></script>
+<script>
+(function () {
+    const LANG = new URLSearchParams(location.search).get('lang') === 'ro' ? 'ro' : 'en';
+    document.documentElement.lang = LANG;
+    const S = window.SITE, T = S.t[LANG], P = window.PUBS;
+    const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const L = {
+        en: { about: 'About me', work: 'Work experience', edu: 'Education and training', lang: 'Language skills', mother: 'Mother tongue', other: 'Other languages',
+              motherV: 'Romanian', grid: ['Listening', 'Reading', 'Spoken interaction', 'Spoken production', 'Writing'],
+              langs: [['English', 'B2–C1: certified overall level (PROSPER-ASE certificate no. 8472, 30.06.2022)'], ['French', ['B2', 'B2', 'B2', 'B2', 'B2']]],
+              cefr: 'Levels: A1 and A2 basic user; B1 and B2 independent user; C1 and C2 proficient user (Common European Framework of Reference for Languages).',
+              digitalSelf: 'Self-assessment (Europass digital competence grid): proficient user in information processing, communication, content creation, safety and problem solving.',
+              org: 'Organisational skills', orgV: ['Founded the SAS Centre of Excellence at ASE Bucharest.', 'Organised the AIDA Conference 2026 (AI and Digital Assets in Energy and Finance, Bucharest) and the workshop “AI, Digital Assets and the Future of Energy Finance” (2024); minitrack chair at ICBE.', 'Project director for ASE in the MSCA Doctoral Network DIGITAL and co-leader of Work Package 4.'], digital: 'Digital skills', digitalV: 'Statistical and econometric software: SAS, R, MATLAB, SPSS, EViews, Stata. Programming and data science: Python (pandas, statsmodels, scikit-learn, PyTorch), Jupyter and Google Colab. Scientific writing and reproducible research: LaTeX and Beamer, Git and GitHub, Quantlet. Microsoft Office.',
+              proj: 'Projects', net: 'Networks and memberships', aw: 'Honours and awards', jour: 'Publications', pubsLine: (n, j) => `${n} publications, of which ${j} journal articles; full list with links and BibTeX:`, now: 'Current',
+              address: 'Address', phone: 'Phone', email: 'E-mail', web: 'Website', ids: 'Profiles', addressV: 'Bucharest University of Economic Studies, Bucharest, Romania',
+              more: n => `The complete list of ${n} publications (proceedings, books, chapters, working papers), with links and BibTeX:` },
+        ro: { about: 'Despre mine', work: 'Experiență profesională', edu: 'Educație și formare', lang: 'Competențe lingvistice', mother: 'Limba maternă', other: 'Alte limbi',
+              motherV: 'română', grid: ['Ascultare', 'Citire', 'Conversație', 'Discurs oral', 'Scriere'],
+              langs: [['engleză', 'B2–C1: nivel global certificat (PROSPER-ASE, certificat nr. 8472, 30.06.2022)'], ['franceză', ['B2', 'B2', 'B2', 'B2', 'B2']]],
+              cefr: 'Niveluri: A1 și A2 utilizator elementar; B1 și B2 utilizator independent; C1 și C2 utilizator experimentat (Cadrul european comun de referință pentru limbi).',
+              digitalSelf: 'Autoevaluare (grila Europass de competențe digitale): utilizator experimentat la procesarea informației, comunicare, creare de conținut, securitate și rezolvarea de probleme.',
+              org: 'Competențe organizaționale', orgV: ['Înființarea Centrului de Excelență SAS din ASE București.', 'Organizarea AIDA Conference 2026 (AI and Digital Assets in Energy and Finance, București) și a workshop-ului „AI, Digital Assets and the Future of Energy Finance” (2024); chair de minitrack la ICBE.', 'Director de proiect din partea ASE în rețeaua doctorală MSCA DIGITAL și co-lider al pachetului de lucru 4.'], digital: 'Competențe digitale', digitalV: 'Software statistic și econometric: SAS, R, MATLAB, SPSS, EViews, Stata. Programare și data science: Python (pandas, statsmodels, scikit-learn, PyTorch), Jupyter și Google Colab. Redactare științifică și cercetare reproductibilă: LaTeX și Beamer, Git și GitHub, Quantlet. Microsoft Office.',
+              proj: 'Proiecte', net: 'Rețele și afilieri profesionale', aw: 'Distincții și premii', jour: 'Publicații', pubsLine: (n, j) => `${n} de publicații, dintre care ${j} de articole în reviste; lista completă, cu linkuri și BibTeX:`, now: 'Prezent',
+              address: 'Adresă', phone: 'Telefon', email: 'E-mail', web: 'Site', ids: 'Profiluri', addressV: 'Academia de Studii Economice din București, București, România',
+              more: n => `Lista completă a celor ${n} de publicații (volume de conferință, cărți, capitole, working papers), cu linkuri și BibTeX:` }
+    }[LANG];
+    const RO = LANG === 'ro';
+    L.eduD = {
+        '2010–2013': ['Topic: predictability of financial crises, with applications to the stock market. Advisers: Nicolae Dardac, Gabriela Anghelache.', 'Tema: predictibilitatea crizelor financiare, cu aplicații pe piața de capital. Coordonatori: Nicolae Dardac, Gabriela Anghelache.'],
+        '2007': ['Thesis: Statistical methods for the analysis of the stock market.', 'Teza: Metode statistice aplicate în analiza pieței de capital.'],
+        '2002': ['Dissertation: Repeated surveys through linear time-series models.', 'Disertația: Studiul sondajelor repetate prin modele liniare de serii de timp.'],
+        '2000': ['Thesis: Competitive equilibrium in the Arrow–Debreu model.', 'Lucrarea de licență: Echilibrul competitiv al unei economii în modelul Arrow–Debreu.']
+    };
+    const place = t => /Humboldt|Berlin/.test(t) ? 'Berlin, ' + (RO ? 'Germania' : 'Germany')
+        : /Reading/.test(t) ? 'Reading, ' + (RO ? 'Regatul Unit' : 'United Kingdom')
+        : /Corabia/.test(t) ? 'Corabia, ' + (RO ? 'România' : 'Romania')
+        : /ASE|Bucure|Bucharest|IPE|Ipsos/.test(t) ? (RO ? 'București, România' : 'Bucharest, Romania') : '';
+    const when = y => esc(y.replace(/\s*–\s*/, ' – ').replace(/ – $/, ' – ' + L.now).replace(/(present|prezent)/, L.now));
+    const entry = (y, what, where, desc) => `<div class="entry"><div class="when">${when(y)}${place(where + ' ' + (desc || '')) ? `<span class="place">${esc(place(where + ' ' + (desc || '')))}</span>` : ''}</div>` +
+        `<div class="what">${esc(what)}</div>${where ? `<div class="where">${esc(where)}</div>` : ''}${desc ? `<p class="desc">${esc(desc)}</p>` : ''}</div>`;
+    const start = y => parseInt(y, 10);
+    const me = n => /\bPele$/i.test(n) && /Daniel|Dan|D\. ?T/i.test(n);
+    const pub = p => `<li>${p.a.map(n => me(n) ? `<span class="me">${esc(n)}</span>` : esc(n)).join(', ')} (${p.y}). ${esc(p.t)}. <i>${esc(p.v)}</i>` +
+        `${p.vol ? `, ${esc(p.vol)}${p.no ? `(${esc(p.no)})` : ''}` : ''}${p.p ? `, ${esc(p.p)}` : ''}.${p.doi ? ` doi:${esc(p.doi)}` : ''}</li>`;
+    const pubsUrl = 'https://danpele.github.io/' + S.pages.publications[RO ? 1 : 0];
+
+    let h = `<header><img src="assets/photo.jpg" alt=""><div><h1>Daniel Traian Pele</h1><p class="info">
+        ${T.roles.map(r => `${esc(r[0])}, ${esc(r[1])}`).join('<br>')}<br>
+        <b>${L.address}:</b> ${esc(L.addressV)}<br>
+        <b>${L.phone}:</b> <a href="tel:+40745016813">(+40) 745 016 813</a> &nbsp; <b>${L.email}:</b> <a href="mailto:danpele@ase.ro">danpele@ase.ro</a> &nbsp; <b>${L.web}:</b> <a href="https://danpele.github.io">danpele.github.io</a><br>
+        <b>${L.ids}:</b> <a href="https://orcid.org/0000-0002-5891-5495">ORCID 0000-0002-5891-5495</a> · <a href="https://scholar.google.com/citations?user=8dmnNZ4AAAAJ">Google Scholar</a> · <a href="https://github.com/danpele">GitHub</a></p></div></header>`;
+    h += `<h2>${L.about}</h2>` + T.bio.slice(1).map(p => `<p class="about">${esc(p)}</p>`).join('');
+    const work = S.positions.slice().sort((a, b) => start(b.y) - start(a.y) || (/–$/.test(b.y) - /–$/.test(a.y)));
+    h += `<h2>${L.work}</h2>` + work.map(e => entry(e.y, e[LANG][0], e[LANG][1], e.d && e.d[LANG])).join('');
+    h += `<h2>${L.edu}</h2>` + S.education.map(e => entry(e.y, e[LANG][0], e[LANG][1], (L.eduD[e.y] || [])[RO ? 1 : 0])).join('');
+    h += `<div class="keep"><h2>${L.lang}</h2><p class="desc"><b>${L.mother}:</b> ${L.motherV}</p><p class="desc"><b>${L.other}:</b></p>` +
+        `<table class="cefr"><tr><th></th>${L.grid.map(g => `<th>${g}</th>`).join('')}</tr>` +
+        L.langs.map(([n, lv]) => `<tr><td class="ln">${n}</td>${Array.isArray(lv) ? lv.map(v => `<td>${v}</td>`).join('') : `<td colspan="5">${lv}</td>`}</tr>`).join('') +
+        `</table><p class="cnote">${L.cefr}</p></div>`;
+    h += `<h2>${L.digital}</h2><p class="desc">${esc(L.digitalV)}</p><p class="desc">${esc(L.digitalSelf)}</p>`;
+    h += `<h2>${L.org}</h2><ul class="plain">` + L.orgV.map(x => `<li>${esc(x)}</li>`).join('') + '</ul>';
+    h += `<h2>${L.proj}</h2>` + S.projects.map(p => { const [n, m, t] = p[LANG]; const [d, ...rest] = m.split(' · '); return entry(d, n, rest.join(' · '), t); }).join('');
+    h += S.projectsMore.map(p => entry(p.y, p[LANG][0], '', p[LANG][1])).join('');
+    h += `<h2>${L.net}</h2><ul class="plain">` + S.service[LANG].map(s => `<li>${s}</li>`).join('') + '</ul>';
+    h += `<h2>${L.aw}</h2><ul class="plain">` + S.awards[LANG].map(s => `<li>${esc(s)}</li>`).join('') + '</ul>';
+    const J = P.filter(p => p.c === 'journal');
+    h += `<h2>${L.jour}</h2><p class="desc">${L.pubsLine(P.length, J.length)} <a href="${pubsUrl}">${pubsUrl}</a></p>`;
+    document.getElementById('cv').innerHTML = h;
+})();
+</script>
+</body>
+</html>
