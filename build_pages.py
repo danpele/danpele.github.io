@@ -88,6 +88,12 @@ PAGE_HERO = """    <section class="page-hero">
 """
 
 
+def ver(path):
+    """Short content hash, so browsers reload a changed script or stylesheet instead of using an old cached copy."""
+    import hashlib
+    return hashlib.md5(open(os.path.join(HERE, path), 'rb').read()).hexdigest()[:8]
+
+
 def build(key, lang):
     files, secs = PAGES[key]
     me, other = files[0 if lang == 'en' else 1], files[1 if lang == 'en' else 0]
@@ -119,7 +125,7 @@ def build(key, lang):
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css?v={ver('assets/style.css')}">
 """ + (f'    <script type="application/ld+json">{json.dumps(PERSON, ensure_ascii=False)}</script>\n' if key == 'home' else '') + "</head>\n"
     body = f"""<body data-page="{key}">
     <header class="topbar{' solid' if key != 'home' else ''}" id="topbar">
@@ -138,7 +144,7 @@ def build(key, lang):
     scripts = ['assets/pubs.js', 'assets/content.js', 'assets/viz.js', 'assets/app.js']
     if key in ('publications', 'talks'):
         scripts.append('assets/graphs.js')
-    body += '\n' + ''.join(f'    <script src="{s}"></script>\n' for s in scripts) + "</body>\n</html>\n"
+    body += '\n' + ''.join(f'    <script src="{s}?v={ver(s)}"></script>\n' for s in scripts) + "</body>\n</html>\n"
     open(os.path.join(HERE, me), 'w', encoding='utf8').write(head + body)
     return me
 
