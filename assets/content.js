@@ -40,8 +40,6 @@ window.SITE = {
     },
 
     partners: [
-        ['logo_ase.png', 'Bucharest University of Economic Studies', 'https://www.ase.ro'],
-        ['logo_acad.png', 'Institute for Economic Forecasting (IPE), Romanian Academy', 'https://ipe.ro'],
         ['logo_ida.png', 'Institute for Digital Assets', 'https://www.theida.net'],
         ['logo_ai4efin.png', 'AI4EFin', 'https://www.ai4efin.ase.ro'],
         ['logo_msca.png', 'MSCA Digital Finance', 'https://www.digital-finance-msca.com'],
@@ -1957,9 +1955,8 @@ window.SITE = {
                     ['Senior Researcher I (CS I)', 'Institute for Economic Forecasting (IPE), Romanian Academy', 'logo_acad.png', 'https://ipe.ro']],
             about: 'About', interests: 'Research interests',
             bio: [
-                'I am a Professor at the Bucharest University of Economic Studies (ASE) and Senior Researcher I (CS I) at the Institute for Economic Forecasting (IPE) of the Romanian Academy.',
-                'I work on financial econometrics, risk measurement and AI in finance: tail risk (Value at Risk and Expected Shortfall), information entropy, bubbles and market crashes, digital assets and, more recently, large language models and time-series foundation models for risk forecasting and energy markets.',
-                "I lead ASE's team in the MSCA Doctoral Network on Digital Finance; between 2023 and 2026 I worked in the IDA and AI4EFin projects. I have supervised PhD students since 2019. My course materials and the code behind my papers are public on GitHub."
+                'My doctoral thesis (2007) dealt with statistical methods for the stock market, and my postdoctoral research with information entropy, uncertainty and the predictability of financial crises. I have since worked on speculative bubbles, digital assets and the forecasting of tail risk with Value at Risk and Expected Shortfall.',
+                'My current research concerns large language models and time-series foundation models for risk forecasting and energy markets. My course materials and the code behind my papers are public on GitHub.'
             ],
             interestsList: ['Financial econometrics', 'Tail risk: VaR & ES', 'Information entropy', 'Digital assets', 'Bubbles & crashes', 'AI & LLMs in finance', 'Foundation models', 'Energy finance'],
             stats: { pubs: 'publications', journal: 'journal articles', courses: 'open courses', since: 'teaching at ASE since' },
@@ -2001,9 +1998,8 @@ window.SITE = {
                     ['Cercetător Științific I (CS I)', 'Institutul de Prognoză Economică (IPE), Academia Română', 'logo_acad.png', 'https://ipe.ro']],
             about: 'Despre', interests: 'Domenii de cercetare',
             bio: [
-                'Sînt profesor universitar la Academia de Studii Economice din București (ASE) și Cercetător Științific I (CS I) la Institutul de Prognoză Economică (IPE) al Academiei Române.',
-                'Lucrez în econometrie financiară, măsurarea riscului și AI în finanțe: tail risk (Value at Risk și Expected Shortfall), entropie informațională, bule speculative și crahuri bursiere, active digitale și, mai recent, modele mari de limbaj și time-series foundation models pentru prognoza riscului și piețele de energie.',
-                'Coordonez echipa ASE în rețeaua doctorală MSCA Digital Finance; între 2023 și 2026 am lucrat în proiectele IDA și AI4EFin. Sînt conducător de doctorat din 2019. Materialele de curs și codul lucrărilor mele sînt publice pe GitHub.'
+                'Teza de doctorat (2007) a tratat metode statistice pentru piața de capital, iar cercetarea postdoctorală, entropia informațională, incertitudinea și predictibilitatea crizelor financiare. Am studiat apoi bulele speculative, activele digitale și prognoza riscului extrem prin Value at Risk și Expected Shortfall.',
+                'În prezent cercetez modelele mari de limbaj și time-series foundation models în prognoza riscului și pe piețele de energie. Materialele de curs și codul lucrărilor mele sînt publice pe GitHub.'
             ],
             interestsList: ['Econometrie financiară', 'Tail risk: VaR și ES', 'Entropie informațională', 'Active digitale', 'Bule și crahuri', 'AI și LLM-uri în finanțe', 'Foundation models', 'Energy finance'],
             stats: { pubs: 'publicații', journal: 'articole în reviste', courses: 'cursuri deschise', since: 'la ASE din' },

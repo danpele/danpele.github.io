@@ -51,7 +51,7 @@
         if (has('bio')) {
         // about
         $('bio').innerHTML = T.bio.map(p => `<p>${p}</p>`).join('') +
-            `<ul class="chips">${T.interestsList.map(i => `<li>${esc(i)}</li>`).join('')}</ul>`;
+            '';
         $('now').innerHTML = T.now.map(n => `<li>${n}</li>`).join('');
 
         }
