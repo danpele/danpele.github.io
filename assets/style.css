@@ -69,12 +69,6 @@ h4 { margin: 0 0 0.3rem; font-size: 1.02rem; line-height: 1.35; }
 /* ---------- hero ---------- */
 .hero { position: relative; overflow: hidden; color: #fff; padding: 118px 0 0;
     background: radial-gradient(1200px 500px at 80% -10%, #2C5FB3 0%, transparent 60%), linear-gradient(160deg, #0D1F3F 0%, #16336A 55%, #1C428A 100%); }
-/* Romanian flag in the background of the home page hero */
-.hero::before { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.42;
-    background: linear-gradient(90deg, #0B3FB0 0%, #0B3FB0 30%, #FCD116 36%, #FCD116 64%, #CE1126 70%, #CE1126 100%);
-    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 72%, transparent 100%); mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 72%, transparent 100%); }
-.hero > .wrap { position: relative; z-index: 1; }
-body[data-page="home"] .hero { background: linear-gradient(160deg, #0E1117 0%, #161B24 55%, #1B2130 100%); }
 .hero-bg { position: absolute; inset: auto 0 0 0; width: 100%; height: 42%; pointer-events: none; }
 #hero-path-a { stroke: rgba(231, 179, 74, 0.55); }
 #hero-path-b { stroke: rgba(141, 180, 245, 0.45); }
@@ -391,6 +385,8 @@ a.project:hover { border-left-color: var(--accent); transform: translateX(3px); 
 .page-hero h1 { margin: 0.7rem 0 0.4rem; font-size: clamp(2rem, 4vw, 2.8rem); }
 .page-hero p { margin: 0; color: #C9D6EE; max-width: 720px; }
 .motto { display: flex; align-items: center; gap: 0.9rem; margin: 0 0 2.2rem; padding: 1rem 1.2rem; border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; background: rgba(255, 255, 255, 0.06); gap: 1.6rem; }
+/* Romanian flag behind the quote band, darkened so the text stays readable */
+.motto { background: linear-gradient(rgba(10, 20, 40, 0.55), rgba(10, 20, 40, 0.55)), linear-gradient(90deg, #0B3FB0 0%, #0B3FB0 30%, #FCD116 36%, #FCD116 64%, #CE1126 70%, #CE1126 100%); background-origin: border-box; border-left-color: transparent; }
 .motto-lamp { flex: 0 0 240px; }
 .motto > div { min-width: 0; }
 .motto-lamp img { display: block; width: 240px; height: 168px; object-fit: cover; border-radius: 6px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35); }
