@@ -204,7 +204,7 @@
         $('contact-text').innerHTML = T.contactText;
         $('footer-links').innerHTML = S.links.map(([n, h]) => `<a href="${h}"${h.startsWith('mailto') ? '' : ' ' + ext}>${n}</a>`).join('');
         $('footer').innerHTML = `&copy; ${new Date().getFullYear()} ${T.footer}`;
-        $('motto').innerHTML = `<a class="motto-lamp" href="https://www.linkedin.com/posts/daniel-traian-pele_1-decembrie-ziua-na%C8%9Bional%C4%83-a-rom%C3%A2niei-share-7398786810773942272-Xl_a/" ${ext} title="${esc(T.lamp)}"><img src="assets/opait.jpg" alt="${esc(T.lamp)}" width="806" height="564"><span class="lamp-cap"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#002B7F"/><rect x="1" width="1" height="2" fill="#FCD116"/><rect x="2" width="1" height="2" fill="#CE1126"/></svg>${esc(T.lampShort)}</span></a>` +
+        $('motto').innerHTML = `<a class="motto-lamp" href="https://www.linkedin.com/posts/daniel-traian-pele_1-decembrie-ziua-na%C8%9Bional%C4%83-a-rom%C3%A2niei-share-7398786810773942272-Xl_a/" ${ext} title="${esc(T.lamp)}"><img src="assets/opait.jpg" alt="${esc(T.lamp)}" width="806" height="564"></a>` +
             `<div><blockquote lang="it">“Tristo è quel discepolo che non avanza il suo maestro.”</blockquote><p>${T.motto}</p><figcaption>— Leonardo da Vinci</figcaption></div>`;
     }
 

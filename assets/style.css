@@ -69,6 +69,12 @@ h4 { margin: 0 0 0.3rem; font-size: 1.02rem; line-height: 1.35; }
 /* ---------- hero ---------- */
 .hero { position: relative; overflow: hidden; color: #fff; padding: 118px 0 0;
     background: radial-gradient(1200px 500px at 80% -10%, #2C5FB3 0%, transparent 60%), linear-gradient(160deg, #0D1F3F 0%, #16336A 55%, #1C428A 100%); }
+/* Romanian flag in the background of the home page hero */
+.hero::before { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.42;
+    background: linear-gradient(90deg, #0B3FB0 0%, #0B3FB0 30%, #FCD116 36%, #FCD116 64%, #CE1126 70%, #CE1126 100%);
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 72%, transparent 100%); mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 72%, transparent 100%); }
+.hero > .wrap { position: relative; z-index: 1; }
+body[data-page="home"] .hero { background: linear-gradient(160deg, #0E1117 0%, #161B24 55%, #1B2130 100%); }
 .hero-bg { position: absolute; inset: auto 0 0 0; width: 100%; height: 42%; pointer-events: none; }
 #hero-path-a { stroke: rgba(231, 179, 74, 0.55); }
 #hero-path-b { stroke: rgba(141, 180, 245, 0.45); }
@@ -390,8 +396,6 @@ a.project:hover { border-left-color: var(--accent); transform: translateX(3px); 
 .motto-lamp img { display: block; width: 240px; height: 168px; object-fit: cover; border-radius: 6px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35); }
 .motto-lamp { display: block; width: 240px; color: #C9D6EE; text-decoration: none; }
 .motto-lamp:hover { text-decoration: none; }
-.lamp-cap { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.45rem; font-size: 0.74rem; line-height: 1.2; color: #A9BAD8; white-space: nowrap; }
-.lamp-cap .flag { width: 18px; height: 12px; flex: none; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25); }
 .motto-lamp:hover img { transform: scale(1.04); }
 @media (max-width: 700px) { .motto { flex-direction: column; align-items: flex-start; } .motto-lamp { flex-basis: auto; } .motto-lamp, .motto-lamp img { width: 200px; } .motto-lamp img { height: 140px; } .motto blockquote { font-size: 1.2rem; } }
 .page-hero .motto { margin: 1.6rem 0 0; }
