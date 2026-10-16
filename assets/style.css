@@ -70,10 +70,11 @@ h4 { margin: 0 0 0.3rem; font-size: 1.02rem; line-height: 1.35; }
 .hero { position: relative; overflow: hidden; color: #fff; padding: 118px 0 0;
     background: radial-gradient(1200px 500px at 80% -10%, #2C5FB3 0%, transparent 60%), linear-gradient(160deg, #0D1F3F 0%, #16336A 55%, #1C428A 100%); }
 /* Romanian flag in the background of the home page hero */
-.hero::before { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.22;
-    background: linear-gradient(90deg, #2F6BFF 0%, #2F6BFF 27%, #FCD116 39%, #FCD116 61%, #FF2A45 73%, #FF2A45 100%);
+.hero::before { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.42;
+    background: linear-gradient(90deg, #0B3FB0 0%, #0B3FB0 30%, #FCD116 36%, #FCD116 64%, #CE1126 70%, #CE1126 100%);
     -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 72%, transparent 100%); mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 72%, transparent 100%); }
 .hero > .wrap { position: relative; z-index: 1; }
+body[data-page="home"] .hero { background: linear-gradient(160deg, #0E1117 0%, #161B24 55%, #1B2130 100%); }
 .hero-bg { position: absolute; inset: auto 0 0 0; width: 100%; height: 42%; pointer-events: none; }
 #hero-path-a { stroke: rgba(231, 179, 74, 0.55); }
 #hero-path-b { stroke: rgba(141, 180, 245, 0.45); }
