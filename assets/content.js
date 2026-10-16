@@ -1982,7 +1982,8 @@ window.SITE = {
             contact: 'Contact',
             contactText: 'Department of Statistics and Econometrics, Bucharest University of Economic Studies, Bucharest, Romania. E-mail: <a href="mailto:danpele@ase.ro">danpele@ase.ro</a>.',
             footer: 'Daniel Traian Pele',
-            motto: 'Poor is the pupil who does not surpass his master.'
+            motto: 'Poor is the pupil who does not surpass his master.',
+            lamp: 'Daco-Roman oil lamp, 2nd–4th century AD, found near Gura-Padinii (Romanați, today Olt county)'
         },
         ro: {
             eyebrow: 'Statistică · Econometrie financiară · AI în finanțe', heroViz: 'Distribuția Normală vs. cozi groase (Student t, 3 grade de libertate); hașurat: coada de 1% din spatele VaR 1%',
@@ -2026,7 +2027,8 @@ window.SITE = {
             contact: 'Contact',
             contactText: 'Departamentul de Statistică și Econometrie, Academia de Studii Economice din București, România. E-mail: <a href="mailto:danpele@ase.ro">danpele@ase.ro</a>.',
             footer: 'Daniel Traian Pele',
-            motto: 'Trist este discipolul care nu își depășește maestrul.'
+            motto: 'Trist este discipolul care nu își depășește maestrul.',
+            lamp: 'Opaiț daco-roman din secolele II–IV, descoperit lângă Gura-Padinii (Romanați, astăzi Olt)'
         }
     }
 };
