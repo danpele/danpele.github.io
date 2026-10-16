@@ -15,12 +15,16 @@ window.SITE = {
     news: [
         { d: '2026-10-13', en: 'Member of the graduation committee at the PhD defence of Yiting Liu (University of Twente): “Graph-Based Modeling for Credit Risk Assessment in Peer-to-Peer Lending”.', ro: 'Membru în comisia de doctorat la susținerea tezei lui Yiting Liu (University of Twente): „Graph-Based Modeling for Credit Risk Assessment in Peer-to-Peer Lending”.', href: 'https://www.linkedin.com/feed/update/urn:li:activity:7516243536707575809/',
           img: ['n_twente_group.jpg', 'n_twente_committee.jpg', 'n_twente_diploma.jpg'] },
-        { d: '2026-09-26', en: 'Talk at IntelligenceX 2026 (NUS, Singapore): diagnosing and recalibrating tail-risk forecasts.', ro: 'Prezentare la IntelligenceX 2026 (NUS, Singapore): diagnosticarea și recalibrarea prognozelor de tail risk.', href: 'talks' },
+        { d: '2026-09-26', en: 'Talk at IntelligenceX 2026 (NUS, Singapore): diagnosing and recalibrating tail-risk forecasts.', ro: 'Prezentare la IntelligenceX 2026 (NUS, Singapore): diagnosticarea și recalibrarea prognozelor de tail risk.', href: 'talks',
+          img: ['n_nusx_1.jpg', 'n_nusx_2.jpg', 'n_nusx_3.jpg'] },
         { d: '2026-09-01', en: 'Lecture at the HTW Berlin summer school “Data Science for Sustainable Finance and Economics”.', ro: 'Prelegere la școala de vară HTW Berlin „Data Science for Sustainable Finance and Economics”.', href: 'talks' },
-        { d: '2026-07-15', en: 'Invited-session talk at IFCS 2026 (Milan): foundation models in risk forecasting.', ro: 'Prezentare în sesiune invitată la IFCS 2026 (Milano): foundation models în prognoza riscului.', href: 'talks' },
+        { d: '2026-07-15', en: 'Invited-session talk at IFCS 2026 (Milan): foundation models in risk forecasting.', ro: 'Prezentare în sesiune invitată la IFCS 2026 (Milano): foundation models în prognoza riscului.', href: 'talks',
+          img: ['n_ifcs_1.jpg', 'n_ifcs_2.jpg', 'n_ifcs_3.jpg'] },
         { d: '2026-07-01', en: 'New paper in Mathematics: finite-sample precision limits for Expected Shortfall forecast comparisons.', ro: 'Articol nou în Mathematics: limitele de precizie în eșantioane finite pentru compararea prognozelor Expected Shortfall.', href: 'https://doi.org/10.3390/math14132316' },
-        { d: '2026-06-12', en: 'Talk at the Quantitative Finance Conference 2026 (NUS, Singapore).', ro: 'Prezentare la Quantitative Finance Conference 2026 (NUS, Singapore).', href: 'talks' },
-        { d: '2026-03-28', en: 'Best Paper Award at ICBE 2026 for “A Multimodal Vision-Language Framework for Financial Anomaly Detection”.', ro: 'Best Paper Award la ICBE 2026 pentru „A Multimodal Vision-Language Framework for Financial Anomaly Detection”.', href: 'https://doi.org/10.2478/picbe-2026-0020' }
+        { d: '2026-06-12', en: 'Talk at the Quantitative Finance Conference 2026 (NUS, Singapore).', ro: 'Prezentare la Quantitative Finance Conference 2026 (NUS, Singapore).', href: 'talks',
+          img: ['n_qfc_1.jpg', 'n_qfc_2.jpg', 'n_qfc_3.jpg'] },
+        { d: '2026-03-28', en: 'Best Paper Award at ICBE 2026 for “A Multimodal Vision-Language Framework for Financial Anomaly Detection”.', ro: 'Best Paper Award la ICBE 2026 pentru „A Multimodal Vision-Language Framework for Financial Anomaly Detection”.', href: 'https://doi.org/10.2478/picbe-2026-0020',
+          img: ['n_icbe_1.jpg', 'n_icbe_2.jpg', 'n_icbe_3.jpg'] }
     ],
 
     // code or data linked to a publication (DOI or title start -> repository)
