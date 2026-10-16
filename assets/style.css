@@ -293,6 +293,10 @@ a.project:hover { border-left-color: var(--accent); transform: translateX(3px); 
 .ticks li { position: relative; padding: 0.35rem 0 0.35rem 1.6rem; font-size: 0.93rem; }
 .ticks li::before { content: '✓'; position: absolute; left: 0; top: 0.35rem; color: var(--accent); font-weight: 700; }
 
+/* flags in the language switcher */
+.lang a { display: inline-flex; align-items: center; gap: 0.35rem; }
+.lang .flag { width: 18px; height: 12px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15); flex: none; }
+
 /* footer */
 .footer { background: linear-gradient(160deg, #0D1F3F, #16336A); color: #DCE5F5; padding: 4rem 0 1.5rem; }
 .footer h2 { color: #fff; }
