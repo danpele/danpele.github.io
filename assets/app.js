@@ -202,6 +202,7 @@
         $('contact-text').innerHTML = T.contactText;
         $('footer-links').innerHTML = S.links.map(([n, h]) => `<a href="${h}"${h.startsWith('mailto') ? '' : ' ' + ext}>${n}</a>`).join('');
         $('footer').innerHTML = `&copy; ${new Date().getFullYear()} ${T.footer}`;
+        $('motto').innerHTML = `<blockquote lang="it">“Tristo è quel discepolo che non avanza il suo maestro.”</blockquote><p>${T.motto}</p><figcaption>— Leonardo da Vinci</figcaption>`;
     }
 
     // ---------------- publications ----------------
