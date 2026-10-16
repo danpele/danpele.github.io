@@ -134,7 +134,7 @@ def build(key, lang):
         <div class="wrap topbar-inner">
             <a class="brand" href="{files[0 if lang == 'en' else 1] if key == 'home' else PAGES['home'][0][0 if lang == 'en' else 1]}"><img src="assets/photo.jpg" alt=""><span>D. T. Pele</span></a>
             <nav class="nav" id="nav"></nav>
-            <div class="lang" role="group" aria-label="{'Limba' if lang == 'ro' else 'Language'}"><a href="{ro_file}" hreflang="ro" id="lang-ro"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#002B7F"/><rect x="1" width="1" height="2" fill="#FCD116"/><rect x="2" width="1" height="2" fill="#CE1126"/></svg>RO</a><a href="{en_file}" hreflang="en" id="lang-en">EN</a></div>
+            <div class="lang" role="group" aria-label="{'Limba' if lang == 'ro' else 'Language'}"><a href="{ro_file}" hreflang="ro" id="lang-ro">RO</a><a href="{en_file}" hreflang="en" id="lang-en">EN</a></div>
         </div>
     </header>
 

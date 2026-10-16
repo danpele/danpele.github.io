@@ -69,6 +69,11 @@ h4 { margin: 0 0 0.3rem; font-size: 1.02rem; line-height: 1.35; }
 /* ---------- hero ---------- */
 .hero { position: relative; overflow: hidden; color: #fff; padding: 118px 0 0;
     background: radial-gradient(1200px 500px at 80% -10%, #2C5FB3 0%, transparent 60%), linear-gradient(160deg, #0D1F3F 0%, #16336A 55%, #1C428A 100%); }
+/* Romanian flag in the background of the home page hero */
+.hero::before { content: ''; position: absolute; top: 60px; right: -4%; width: 58%; height: calc(100% - 60px); pointer-events: none; opacity: 0.55;
+    background: linear-gradient(90deg, #1F5BD6 0 33.34%, #FCD116 33.34% 66.67%, #E0213A 66.67% 100%);
+    -webkit-mask-image: radial-gradient(ellipse 50% 50% at 55% 50%, #000 35%, transparent 100%); mask-image: radial-gradient(ellipse 50% 50% at 55% 50%, #000 35%, transparent 100%); }
+.hero > .wrap { position: relative; z-index: 1; }
 .hero-bg { position: absolute; inset: auto 0 0 0; width: 100%; height: 42%; pointer-events: none; }
 #hero-path-a { stroke: rgba(231, 179, 74, 0.55); }
 #hero-path-b { stroke: rgba(141, 180, 245, 0.45); }
@@ -292,10 +297,6 @@ a.project:hover { border-left-color: var(--accent); transform: translateX(3px); 
 .ticks { list-style: none; padding: 0; margin: 0; }
 .ticks li { position: relative; padding: 0.35rem 0 0.35rem 1.6rem; font-size: 0.93rem; }
 .ticks li::before { content: '✓'; position: absolute; left: 0; top: 0.35rem; color: var(--accent); font-weight: 700; }
-
-/* flags in the language switcher */
-.lang a { display: inline-flex; align-items: center; gap: 0.35rem; }
-.lang .flag { width: 18px; height: 12px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15); flex: none; }
 
 /* footer */
 .footer { background: linear-gradient(160deg, #0D1F3F, #16336A); color: #DCE5F5; padding: 4rem 0 1.5rem; }
