@@ -385,13 +385,15 @@ a.project:hover { border-left-color: var(--accent); transform: translateX(3px); 
 .page-hero h1 { margin: 0.7rem 0 0.4rem; font-size: clamp(2rem, 4vw, 2.8rem); }
 .page-hero p { margin: 0; color: #C9D6EE; max-width: 720px; }
 .motto { display: flex; align-items: center; gap: 0.9rem; margin: 0 0 2.2rem; padding: 1rem 1.2rem; border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; background: rgba(255, 255, 255, 0.06); gap: 1.6rem; }
-/* Romanian flag behind the quote band, darkened so the text stays readable */
-.motto { background: linear-gradient(rgba(10, 20, 40, 0.55), rgba(10, 20, 40, 0.55)), linear-gradient(90deg, #0B3FB0 0%, #0B3FB0 30%, #FCD116 36%, #FCD116 64%, #CE1126 70%, #CE1126 100%); background-origin: border-box; border-left-color: transparent; }
 .motto-lamp { flex: 0 0 240px; }
 .motto > div { min-width: 0; }
 .motto-lamp img { display: block; width: 240px; height: 168px; object-fit: cover; border-radius: 6px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35); }
+.motto-lamp { display: block; width: 240px; color: #C9D6EE; text-decoration: none; }
+.motto-lamp:hover { text-decoration: none; }
+.lamp-cap { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.45rem; font-size: 0.74rem; line-height: 1.2; color: #A9BAD8; white-space: nowrap; }
+.lamp-cap .flag { width: 18px; height: 12px; flex: none; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25); }
 .motto-lamp:hover img { transform: scale(1.04); }
-@media (max-width: 700px) { .motto { flex-direction: column; align-items: flex-start; } .motto-lamp { flex-basis: auto; } .motto-lamp img { width: 200px; height: 140px; } .motto blockquote { font-size: 1.2rem; } }
+@media (max-width: 700px) { .motto { flex-direction: column; align-items: flex-start; } .motto-lamp { flex-basis: auto; } .motto-lamp, .motto-lamp img { width: 200px; } .motto-lamp img { height: 140px; } .motto blockquote { font-size: 1.2rem; } }
 .page-hero .motto { margin: 1.6rem 0 0; }
 .motto blockquote { margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 1.45rem; line-height: 1.3; color: #fff; }
 .motto p { margin: 0.4rem 0 0; font-size: 1.02rem; color: #C9D6EE; }
