@@ -384,12 +384,12 @@ a.project:hover { border-left-color: var(--accent); transform: translateX(3px); 
 .page-hero-person img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,0.6); }
 .page-hero h1 { margin: 0.7rem 0 0.4rem; font-size: clamp(2rem, 4vw, 2.8rem); }
 .page-hero p { margin: 0; color: #C9D6EE; max-width: 720px; }
-.motto { display: flex; align-items: center; gap: 0.9rem; margin: 0 0 1.3rem; padding-left: 0.9rem; border-left: 2px solid var(--gold); max-width: 40rem; }
-.motto-lamp { flex: 0 0 92px; }
+.motto { display: flex; align-items: center; gap: 0.9rem; margin: 0 0 1.3rem; padding-left: 0.9rem; border-left: 2px solid var(--gold); max-width: 44rem; }
+.motto-lamp { flex: 0 0 160px; }
 .motto > div { min-width: 0; }
-.motto-lamp img { display: block; width: 92px; height: 64px; object-fit: cover; border-radius: 6px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35); }
+.motto-lamp img { display: block; width: 160px; height: 112px; object-fit: cover; border-radius: 6px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35); }
 .motto-lamp:hover img { transform: scale(1.04); }
-@media (max-width: 520px) { .motto-lamp { flex-basis: 64px; } .motto-lamp img { width: 64px; height: 45px; } }
+@media (max-width: 520px) { .motto-lamp { flex-basis: 110px; } .motto-lamp img { width: 110px; height: 77px; } }
 .page-hero .motto { margin: 1.3rem 0 0; }
 .motto blockquote { margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 1.05rem; color: #fff; }
 .motto p { margin: 0.2rem 0 0; font-size: 0.85rem; color: #C9D6EE; }
