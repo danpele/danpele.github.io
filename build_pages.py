@@ -60,10 +60,10 @@ PERSON = {
 }
 
 HERO = """    <section class="hero" id="top">
+        <div class="wrap"><figure class="motto" id="motto"></figure></div>
         <div class="wrap hero-inner">
             <div class="hero-photo"><img src="assets/photo.jpg" alt="Daniel Traian Pele" width="220" height="220"></div>
             <div class="hero-text">
-                <figure class="motto" id="motto"></figure>
                 <p class="eyebrow" id="eyebrow"></p>
                 <h1>Daniel Traian Pele</h1>
                 <div class="roles" id="roles"></div>
