@@ -13,6 +13,8 @@ window.SITE = {
 
     // News on the home page (newest first)
     news: [
+        { d: '2026-10-13', en: 'Member of the graduation committee at the PhD defence of Yiting Liu (University of Twente): “Graph-Based Modeling for Credit Risk Assessment in Peer-to-Peer Lending”.', ro: 'Membru în comisia de doctorat la susținerea tezei lui Yiting Liu (University of Twente): „Graph-Based Modeling for Credit Risk Assessment in Peer-to-Peer Lending”.', href: 'https://www.linkedin.com/feed/update/urn:li:activity:7516243536707575809/',
+          img: ['n_twente_group.jpg', 'n_twente_committee.jpg', 'n_twente_diploma.jpg'] },
         { d: '2026-09-26', en: 'Talk at IntelligenceX 2026 (NUS, Singapore): diagnosing and recalibrating tail-risk forecasts.', ro: 'Prezentare la IntelligenceX 2026 (NUS, Singapore): diagnosticarea și recalibrarea prognozelor de tail risk.', href: 'talks' },
         { d: '2026-09-01', en: 'Lecture at the HTW Berlin summer school “Data Science for Sustainable Finance and Economics”.', ro: 'Prelegere la școala de vară HTW Berlin „Data Science for Sustainable Finance and Economics”.', href: 'talks' },
         { d: '2026-07-15', en: 'Invited-session talk at IFCS 2026 (Milan): foundation models in risk forecasting.', ro: 'Prezentare în sesiune invitată la IFCS 2026 (Milano): foundation models în prognoza riscului.', href: 'talks' },

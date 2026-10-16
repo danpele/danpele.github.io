@@ -187,7 +187,8 @@
         if (has('news-list')) {
             const fmt = d => new Date(d + 'T12:00:00').toLocaleDateString(LANG === 'ro' ? 'ro-RO' : 'en-GB', { month: 'short', year: 'numeric' });
             $('news-list').innerHTML = S.news.map(n => { const h = /^https?:/.test(n.href) ? n.href : pageUrl(n.href);
-                return `<li><time datetime="${n.d}">${fmt(n.d)}</time><a href="${h}"${/^https?:/.test(n.href) ? ' ' + ext : ''}>${esc(n[LANG])}</a></li>`; }).join('');
+                const pics = n.img ? `<span class="news-pics">${n.img.map(f => `<a href="assets/${f}" ${ext}><img src="assets/${f}" alt="" width="800" height="534" loading="lazy"></a>`).join('')}</span>` : '';
+                return `<li><time datetime="${n.d}">${fmt(n.d)}</time><div><a href="${h}"${/^https?:/.test(n.href) ? ' ' + ext : ''}>${esc(n[LANG])}</a>${pics}</div></li>`; }).join('');
         }
         // CV page: link to the publications page and the PDF link
         if (has('cv-pubs-note')) {

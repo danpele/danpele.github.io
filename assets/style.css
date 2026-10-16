@@ -301,10 +301,6 @@ a.project:hover { border-left-color: var(--accent); transform: translateX(3px); 
 .footer-links { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: flex-end; }
 .footer-links a { border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 999px; padding: 0.3rem 0.9rem; font-size: 0.87rem; color: #fff; }
 .footer-links a:hover { background: rgba(255, 255, 255, 0.1); text-decoration: none; }
-.motto { margin: 3rem auto 0; max-width: 40rem; text-align: center; }
-.motto blockquote { margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 1.2rem; color: #fff; }
-.motto p { margin: 0.4rem 0 0; font-size: 0.9rem; color: #A9BAD8; }
-.motto figcaption { margin-top: 0.5rem; font-size: 0.85rem; color: var(--gold); letter-spacing: 0.04em; }
 .copyright { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid rgba(255, 255, 255, 0.12); font-size: 0.85rem; color: #A9BAD8; }
 
 /* ---------- responsive ---------- */
@@ -388,6 +384,11 @@ a.project:hover { border-left-color: var(--accent); transform: translateX(3px); 
 .page-hero-person img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,0.6); }
 .page-hero h1 { margin: 0.7rem 0 0.4rem; font-size: clamp(2rem, 4vw, 2.8rem); }
 .page-hero p { margin: 0; color: #C9D6EE; max-width: 720px; }
+.motto { margin: 0 0 1.3rem; padding-left: 0.9rem; border-left: 2px solid var(--gold); max-width: 34rem; }
+.page-hero .motto { margin: 1.3rem 0 0; }
+.motto blockquote { margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 1.05rem; color: #fff; }
+.motto p { margin: 0.2rem 0 0; font-size: 0.85rem; color: #C9D6EE; }
+.motto figcaption { margin-top: 0.25rem; font-size: 0.78rem; color: var(--gold); letter-spacing: 0.04em; }
 body:not([data-page="home"]) main > .section:first-child { padding-top: 3rem; }
 
 /* news */
@@ -396,6 +397,9 @@ body:not([data-page="home"]) main > .section:first-child { padding-top: 3rem; }
 .news time { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); }
 .news a { color: var(--text); font-weight: 500; }
 .news a:hover { color: var(--link); }
+.news-pics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; margin-top: 0.6rem; }
+.news-pics img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 6px; }
+.news-pics a:hover img { opacity: 0.85; }
 
 /* publication actions */
 .pub-actions { margin-top: 0.4rem; display: flex; gap: 0.4rem; }

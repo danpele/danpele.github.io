@@ -63,6 +63,7 @@ HERO = """    <section class="hero" id="top">
         <div class="wrap hero-inner">
             <div class="hero-photo"><img src="assets/photo.jpg" alt="Daniel Traian Pele" width="220" height="220"></div>
             <div class="hero-text">
+                <figure class="motto" id="motto"></figure>
                 <p class="eyebrow" id="eyebrow"></p>
                 <h1>Daniel Traian Pele</h1>
                 <div class="roles" id="roles"></div>
@@ -83,6 +84,7 @@ PAGE_HERO = """    <section class="page-hero">
             <a class="page-hero-person" id="page-person" href="{home}"><img src="assets/photo.jpg" alt="" width="56" height="56"><span>Daniel Traian Pele</span></a>
             <h1 id="page-title"></h1>
             <p id="page-lead"></p>
+            <figure class="motto" id="motto"></figure>
         </div>
     </section>
 """
