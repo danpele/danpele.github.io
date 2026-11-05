@@ -1137,6 +1137,25 @@ window.PUBS = [
 "c": "wp"
 },
 {
+"y": 2013,
+"t": "Towards New Knowledge Based Policies for Development in the Arab Economies & Comparisons with Eastern and Central European Countries",
+"a": [
+"Ahmed Driouchi",
+"Amale Achehboune",
+"Rodrigues Andrès Antonio",
+"Cristina Boboc",
+"Emilia Titan",
+"Daniel Pele"
+],
+"v": "FEMISE Research Report FEM35-01",
+"vol": "",
+"no": "",
+"p": "",
+"doi": "",
+"c": "wp",
+"url": "https://www.femise.org/en/?p=4254"
+},
+{
 "y": 2012,
 "t": "An LPPL Algorithm for Estimating the Critical Time of a Stock Market Bubble",
 "a": [
@@ -1298,7 +1317,7 @@ window.PUBS = [
 "no": "5(558)",
 "p": "647–654",
 "doi": "",
-"c": "journal",
+"c": "proc",
 "url": "http://store.ectap.ro/suplimente/Conferinta%20FABBV%202010_engleza.pdf"
 },
 {
