@@ -180,7 +180,7 @@
         $('positions').innerHTML = tl(S.positions.slice().sort((a, b) => parseInt(b.y, 10) - parseInt(a.y, 10) || (/–$/.test(b.y) - /–$/.test(a.y))));
         $('education').innerHTML = tl(S.education);
         $('service').innerHTML = S.service[LANG].map(s => `<li>${s}</li>`).join('');
-        $('awards').innerHTML = S.awards[LANG].map(s => `<li>${esc(s)}</li>`).join('');
+        $('awards').innerHTML = S.awards[LANG].map(s => `<li>${s}</li>`).join('');   // trusted content; items may carry links
 
         }
         // news
