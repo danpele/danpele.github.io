@@ -44,7 +44,7 @@
         $('kpis').innerHTML = [[PUBS.length, T.kpis.pubs], [nJ, T.kpis.journal], [S.courses.length, T.kpis.courses],
             [new Date().getFullYear() - 2001, T.kpis.years]]
             .map(([n, l]) => `<div class="kpi"><b data-n="${n}">${n}</b><span>${l}</span></div>`).join('');
-        $('partners').innerHTML = S.partners.map(([img, name, href]) =>
+        $('partners').innerHTML = S.partners.map(([img, nm, href]) => ({ img, href, name: typeof nm === 'string' ? nm : nm[LANG] })).map(({ img, name, href }) =>
             `<a href="${href}" ${ext} title="${esc(name)}"><img src="assets/${img}" alt="" loading="lazy"><span class="plabel">${esc(name)}</span></a>`).join('');
 
         }

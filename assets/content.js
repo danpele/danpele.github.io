@@ -51,6 +51,8 @@ window.SITE = {
     },
 
     partners: [
+        ['logo_ase.png', {en: 'Bucharest University of Economic Studies', ro: 'Academia de Studii Economice din București'}, 'https://www.ase.ro'],
+        ['logo_acad.png', {en: 'Romanian Academy, Institute for Economic Forecasting', ro: 'Academia Română, Institutul de Prognoză Economică'}, 'https://ipe.ro'],
         ['logo_ida.png', 'Institute for Digital Assets', 'https://www.theida.net'],
         ['logo_ai4efin.png', 'AI4EFin', 'https://www.ai4efin.ase.ro'],
         ['logo_msca.png', 'MSCA Digital Finance', 'https://www.digital-finance-msca.com'],
@@ -1958,7 +1960,7 @@ window.SITE = {
             aboutKicker: 'Profile', themesKicker: 'What I work on', selectedKicker: 'Highlights', teachingKicker: 'Open courseware',
             researchKicker: 'Funding and networks', pubsKicker: 'Full list', codeKicker: 'Open science', cvKicker: 'Career',
             nowTitle: 'Currently',
-            now: ['Professor, Department of Statistics and Econometrics, Bucharest University of Economic Studies (ASE)', 'Senior Researcher I (CS I) and Head of the Department of Computer-Assisted Economic Research, Institute for Economic Forecasting (IPE), Romanian Academy', 'Project director for ASE and WP4 co-leader, MSCA Doctoral Network <em>Digital Finance</em>', 'Associate Editor, <em>Digital Finance</em> (Springer)', 'Member, Romanian National Statistical Council', 'PhD supervisor, Doctoral School of Cybernetics and Economic Statistics'],
+            now: ['Professor, <a href="https://dse.ase.ro">Department of Statistics and Econometrics</a>, <a href="https://www.ase.ro">Bucharest University of Economic Studies (ASE)</a>', 'Senior Researcher I (CS I) and Head of the Department of Computer-Assisted Economic Research, <a href="https://ipe.ro">Institute for Economic Forecasting (IPE)</a>, <a href="https://acad.ro">Romanian Academy</a>', 'Project director for ASE and WP4 co-leader, <a href="https://www.digital-finance-msca.com">MSCA Doctoral Network <em>Digital Finance</em></a>', 'Associate Editor, <a href="https://link.springer.com/journal/42521"><em>Digital Finance</em> (Springer)</a>', 'Member, Romanian National Statistical Council', 'PhD supervisor, <a href="https://doctorat.ase.ro/programe/cibernetica-si-statistica-economica/">Doctoral School of Cybernetics and Economic Statistics</a>'],
             themes: 'Research themes', themesIntro: 'Click a theme to see the matching publications.', themePubs: n => `${n} publications →`,
             themeActive: name => `Theme: <b>${name}</b>`, clear: 'Show all',
             selected: 'Selected papers', readPaper: 'Read the paper',
@@ -2004,7 +2006,7 @@ window.SITE = {
             aboutKicker: 'Profil', themesKicker: 'Direcții de cercetare', selectedKicker: 'Repere', teachingKicker: 'Cursuri deschise',
             researchKicker: 'Finanțare și rețele', pubsKicker: 'Lista completă', codeKicker: 'Știință deschisă', cvKicker: 'Carieră',
             nowTitle: 'În prezent',
-            now: ['Profesor universitar, Departamentul de Statistică și Econometrie, Academia de Studii Economice din București (ASE)', 'Cercetător Științific I (CS I) și coordonator al Departamentului Cercetare Economică Asistată de Calculator, Institutul de Prognoză Economică (IPE), Academia Română', 'Director de proiect din partea ASE și co-lider WP4, MSCA Doctoral Network <em>Digital Finance</em>', 'Editor asociat, <em>Digital Finance</em> (Springer)', 'Membru al Consiliului Statistic Național', 'Conducător de doctorat, Școala Doctorală Cibernetică și Statistică Economică'],
+            now: ['Profesor universitar, <a href="https://dse.ase.ro">Departamentul de Statistică și Econometrie</a>, <a href="https://www.ase.ro">Academia de Studii Economice din București (ASE)</a>', 'Cercetător Științific I (CS I) și coordonator al Departamentului Cercetare Economică Asistată de Calculator, <a href="https://ipe.ro">Institutul de Prognoză Economică (IPE)</a>, <a href="https://acad.ro">Academia Română</a>', 'Director de proiect din partea ASE și co-lider WP4, <a href="https://www.digital-finance-msca.com">MSCA Doctoral Network <em>Digital Finance</em></a>', 'Editor asociat, <a href="https://link.springer.com/journal/42521"><em>Digital Finance</em> (Springer)</a>', 'Membru al Consiliului Statistic Național', 'Conducător de doctorat, <a href="https://doctorat.ase.ro/programe/cibernetica-si-statistica-economica/">Școala Doctorală Cibernetică și Statistică Economică</a>'],
             themes: 'Teme de cercetare', themesIntro: 'Alegeți o temă pentru a vedea publicațiile asociate.', themePubs: n => `${n} publicații →`,
             themeActive: name => `Tema: <b>${name}</b>`, clear: 'Arată toate',
             selected: 'Lucrări selectate', readPaper: 'Citește lucrarea',
