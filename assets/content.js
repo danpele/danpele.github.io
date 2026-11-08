@@ -127,9 +127,9 @@ window.SITE = {
         { href: 'https://danpele.github.io/EMQA/', viz: 'forward', icon: 'bolt', site: true,
           en: ['Energy Markets Quantitative Analysis', 'Energy MBA (Master of Business Administration)', 'Seven lectures on real European energy data: day-ahead electricity price forecasting, volatility, risk for energy companies, derivatives and hedging, renewables, negative prices and batteries, machine learning and foundation models; case studies, Colab notebooks and a team project.'],
           ro: ['Analiza cantitativă a piețelor de energie', 'Energy MBA (Master of Business Administration)', 'Șapte prelegeri pe date reale din piețele europene de energie: prognoza prețurilor day-ahead, volatilitate, riscul companiilor energetice, derivate și hedging, surse regenerabile, prețuri negative și baterii, machine learning și foundation models; studii de caz, notebook-uri Colab și un proiect de echipă.'] },
-        { href: 'https://github.com/danpele/NEURAL_BIZ', viz: 'heatmap', icon: 'ai',
-          en: ['Neural Networks and Deep Learning', 'Course repository', 'Neural networks and deep learning with business applications.'],
-          ro: ['Rețele neuronale și deep learning', 'Repository de curs', 'Rețele neuronale și deep learning cu aplicații în afaceri.'] },
+        { href: 'https://danpele.github.io/NEURAL_BIZ/', viz: 'heatmap', icon: 'ai', site: true,
+          en: ['Neural Networks and Deep Learning', "Master's programme Business Analytics (FABIZ)", 'Fourteen lectures from the perceptron to transformers, graph neural networks, reinforcement learning, language and foundation models, on real financial and energy data; seven research case studies, Colab notebooks, quizzes and a team project.'],
+          ro: ['Rețele neuronale și deep learning', 'Master Business Analytics (FABIZ)', 'Paisprezece cursuri, de la perceptron la arhitecturi transformer, rețele neuronale pe grafuri, învățare prin recompensă, modele lingvistice și modele fundație, pe date financiare și din energie reale; șapte studii de caz din cercetare, notebook-uri Colab, quiz-uri și un proiect de echipă.'] },
         { href: 'https://github.com/danpele/Stat_fin_markets', viz: 'garch', img: 'c_sfmcode.jpg',
           en: ['Statistics of Financial Markets: code', 'Code repository', 'SAS, R and Python code for the statistics of financial markets.'],
           ro: ['Statistica piețelor financiare: cod', 'Repository de cod', 'Cod SAS, R și Python pentru statistica piețelor financiare.'] }
