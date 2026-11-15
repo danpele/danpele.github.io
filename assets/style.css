@@ -408,8 +408,9 @@ body:not([data-page="home"]) main > .section:first-child { padding-top: 3rem; }
 .news { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem 2rem; }
 .news li { display: grid; grid-template-columns: 90px 1fr; gap: 1rem; align-items: baseline; padding: 0.8rem 0; border-bottom: 1px solid var(--line); }
 .news time { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); }
-.news a { color: var(--text); font-weight: 500; }
-.news a:hover { color: var(--link); }
+.news-text { color: var(--text); font-weight: 500; }
+.news-text a { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.news-text a:hover { text-decoration-thickness: 2px; }
 .news-abs { display: block; margin-top: 0.5rem; font-size: 0.86rem; line-height: 1.55; color: var(--muted); text-align: justify; hyphens: auto; }
 .news-pics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; margin-top: 0.6rem; }
 .news-pics img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 6px; }
