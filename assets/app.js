@@ -149,7 +149,7 @@
             <div class="talk-main">
                 <h4>${c.href ? `<a href="${c.href}" ${ext}>${esc(c.name)}</a>` : esc(c.name)}</h4>
                 <p class="talk-place">${esc(L(c.place))}${c.href ? ` · <a class="talk-link" href="${c.href}" ${ext}>${c.hrefLabel ? L(c.hrefLabel) : T.confSite} ↗</a>` : ''}</p>
-                <ul>${c.items.map(it => `<li><span class="tk ${it.talk ? 'tk-talk' : ''}">${it.talk ? T.talkLabel : T.paperLabel}</span>
+                <ul>${c.items.map(it => `<li><span class="tk ${it.talk ? 'tk-talk' : ''}">${it.label ? esc(L(it.label)) : it.talk ? T.talkLabel : T.paperLabel}</span>
                     <span class="tt">${paperLink(L(it.t))}</span>${it.note ? `<span class="tn">${it.award ? '🏆 ' : ''}${esc(L(it.note))}</span>` : ''}</li>`).join('')}</ul>
             </div></article>`;
         const yearOf = c => +((c.when.en.match(/(20\d\d)/g) || ['0']).pop());

@@ -13,6 +13,8 @@ window.SITE = {
 
     // News on the home page (newest first)
     news: [
+        { d: '2026-11-12', en: 'Invited expert at CIEP 2026, the 24th Conference on International Exchange of Professionals (Shanghai), at the invitation of the Capital University of Economics and Business (CUEB, Beijing): roundtable “A Meeting of Minds” on AI and data science in finance, and the CUEB session on data science and the digital economy.', ro: 'Expert invitat la CIEP 2026, a 24-a Conferință privind schimbul internațional de profesioniști (Shanghai), la invitația Capital University of Economics and Business (CUEB, Beijing): masa rotundă „A Meeting of Minds” despre AI și data science în finanțe și sesiunea CUEB despre data science și economia digitală.', href: 'https://www.linkedin.com/feed/update/urn:li:activity:7526949182591561728/',
+          img: ['n_ciep_1.jpg', 'n_ciep_2.jpg', 'n_ciep_3.jpg'] },
         { d: '2026-10-13', en: 'Member of the graduation committee at the PhD defence of Yiting Liu (University of Twente): “Graph-Based Modeling for Credit Risk Assessment in Peer-to-Peer Lending”.', ro: 'Membru în comisia de doctorat la susținerea tezei lui Yiting Liu (University of Twente): „Graph-Based Modeling for Credit Risk Assessment in Peer-to-Peer Lending”.', href: 'https://www.linkedin.com/feed/update/urn:li:activity:7516243536707575809/',
           img: ['n_twente_group.jpg', 'n_twente_committee.jpg', 'n_twente_diploma.jpg'] },
         { d: '2026-09-26', en: 'Talk at IntelligenceX 2026 (NUS, Singapore): diagnosing and recalibrating tail-risk forecasts.', ro: 'Prezentare la IntelligenceX 2026 (NUS, Singapore): diagnosticarea și recalibrarea prognozelor de tail risk.', href: 'talks',
@@ -362,6 +364,48 @@ window.SITE = {
     // Conference participations, from the IDA team conference lists (Drive) and travel reports.
     // talk: true = presented by D. T. Pele; otherwise co-authored paper
     talks: [
+     {
+      "when": {
+       "en": "10–12 November 2026",
+       "ro": "10–12 noiembrie 2026"
+      },
+      "name": "CIEP 2026: 24th Conference on International Exchange of Professionals",
+      "place": {
+       "en": "Shanghai World Expo Center, Shanghai, China",
+       "ro": "Shanghai World Expo Center, Shanghai, China"
+      },
+      "items": [
+       {
+        "t": "A Meeting of Minds: Frontiers in AI and Data Science, Talk to Editors, Early-Career Development",
+        "talk": true,
+        "label": {
+         "en": "Roundtable",
+         "ro": "Masă rotundă"
+        },
+        "note": {
+         "en": "Invited expert; hosted by the Capital University of Economics and Business (CUEB)",
+         "ro": "Expert invitat; organizată de Capital University of Economics and Business (CUEB)"
+        }
+       },
+       {
+        "t": "Talent Exchange Event on Data Science and the Innovative Development of the Digital Economy",
+        "talk": true,
+        "label": {
+         "en": "Invited expert",
+         "ro": "Expert invitat"
+        },
+        "note": {
+         "en": "CUEB session, 12 November 2026",
+         "ro": "Sesiune CUEB, 12 noiembrie 2026"
+        }
+       }
+      ],
+      "href": "https://www.linkedin.com/feed/update/urn:li:activity:7526949182591561728/",
+      "hrefLabel": {
+       "en": "LinkedIn post",
+       "ro": "Postare LinkedIn"
+      }
+     },
      {
       "when": {
        "en": "24–26 September 2026",
