@@ -196,6 +196,8 @@ def prerender(files):
 if __name__ == '__main__':
     out = [build(k, l) for k in PAGES for l in ('en', 'ro')]
     urls = [BASE + ('' if f == 'index.html' else f) for f in out]
+    # course sites are project pages on the same host: they have no sitemap of their own, so they are listed here
+    urls += [BASE + 'Blockchain-Applications/' + f for f in ['', 'index_ro.html'] + [f'web/l{i}.html' for i in range(1, 9)]]
     open(os.path.join(HERE, 'sitemap.xml'), 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
                                                       ''.join(f'  <url><loc>{u}</loc></url>\n' for u in urls) + '</urlset>\n')
     open(os.path.join(HERE, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n')
